@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import loadable from "@loadable/component";
+// import * as loadable from "react-loadable";
 
-const Header = loadable(() => import("../components/header"));
-const Main = loadable(() => import("../components/main"));
+// const Header = loadable(() => import("../components/header"));
+// const Main = loadable(() => import("../components/main"));
+
+import Header from "../components/header";
+import Main from "../components/main";
 
 const Home: NextPage = () => {
   return (
